@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pintrest</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<h1>
+<body>
+
+	<%= link_to "Users", users_path %>
+<%= link_to "Pins", pins_path %>
+<%= link_to "Boards", boards_path %>
+
+
+
+<%= yield %>
+</h1>
+</body>
+</html>
